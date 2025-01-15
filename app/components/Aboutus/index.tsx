@@ -9,11 +9,11 @@ interface datatype {
 }
 
 const Aboutdata: datatype[] = [
-    {
-        heading: "Highfield Accreditation",
-        imgSrc: "/images/aboutus/imgOne.svg",
-        paragraph: 'Our courses meet the highest industry standards.',
-    },
+    // {
+    //     heading: "Highfield Accreditation",
+    //     imgSrc: "/images/aboutus/imgOne.svg",
+    //     paragraph: 'Our courses meet the highest industry standards.',
+    // },
     {
         heading: "Real-World Training",
         imgSrc: "/images/aboutus/imgTwo.svg",
@@ -34,7 +34,8 @@ const Aboutus = () => {
                 <Image src="/images/aboutus/dots.svg" width={100} height={100} alt="dots-image" className="absolute bottom-1 -left-20" />
                 <h3 className='text-center text-blue text-lg tracking-widest'>ABOUT US</h3>
                 <h4 className='text-center text-4xl lg:text-65xl font-bold'>Why Choose Us?</h4>
-                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 my-16 gap-x-16 lg:gap-x-32'>
+                {/* <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 my-16 gap-x-16 lg:gap-x-32'> */}
+                <div className='grid grid-cols-1 sm:grid-cols-2 my-16 gap-x-16 lg:gap-x-32'>
                     {Aboutdata.map((item, i) => (
                         <div key={i} className='hover:bg-navyblue bg-white rounded-3xl mt-16 pt-10 pl-8 pb-10 pr-6 shadow-xl group'>
                             <h4 className='text-4xl font-semibold  text-black mb-5 group-hover:text-white'>{item.heading}</h4>
